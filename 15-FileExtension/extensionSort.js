@@ -21,7 +21,8 @@ const files = [
     "stop_looking_at_me_like_that_nutmeg.mpeg",
     "aww_i_cant_hate_you.png",
     "omg_my_sneakers.avi",
-    "cat_you_are_the_worst.mp4"
+    "cat_you_are_the_worst.mp4",
+    "foo.bar"
 ];
 
 const videoArray = [];
@@ -55,7 +56,7 @@ const funcs = {
         } else if (ext === 'mpg') {
             videoArray.push(key);
         } else {
-            alert('Unknown file extension in list!');
+            alert('Unknown file extension :  ' + key + '\nPlease edit and try again.');
         }
     },
     setImages: () => {
